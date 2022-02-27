@@ -1,0 +1,37 @@
+<table class="table">
+  <thead>
+    <tr class="text-center">
+      <th scope="col">Id</th>
+      <th scope="col">Info</th>
+      <th scope="col">Muxbir Hesab</th>
+      <th scope="col">Branch Code</th>
+      <th scope="col">Voen</th>
+      <th scope="col">Iban</th>
+      <th scope="col">Swift</th>
+      <th scope="col">City</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center" *ngFor="let bank of bankList">
+      <th scope="row">{{ bank.id }}</th>
+      <td>{{ bank.info }}</td>
+      <td>{{ bank.muxbirHesab }}</td>
+      <td>{{ bank.branchCode }}</td>
+      <td>{{ bank.voen }}</td>
+      <td>{{ bank.iban }}</td>
+      <td>{{ bank.swift }}</td>
+      <td>{{ bank.city }}</td>
+      <td>{{ bank.address }}</td>
+      <td>{{ bank.phone }}</td>
+      <td>
+        <button class="btn-sm btn-warning" routerLink = '/{{bank.id}}'>Update</button>
+      </td>
+      <td>
+        <button (click)="delete(bank.id)" class="btn-sm btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a class="btn btn-success" [routerLink]="['/add']">Add new bank</a>

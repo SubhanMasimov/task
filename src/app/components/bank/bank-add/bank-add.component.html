@@ -1,0 +1,79 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Add new bank</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="bankAddForm">
+                    <div class="mb-3">
+                        <label for="name">Bank info</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="info" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Muxbir hesab</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="muxbirHesab" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Branch Code</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="branchCode" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Voen</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="voen" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Iban</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="iban" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Swift</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="swift" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">City</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="city" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Address</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="address" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name">Phone</label>
+                        <div class="form-group">
+                            <input type="text" id="name" formControlName="phone" class="form-control" />
+                        </div>
+                    </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-fill btn-success" (click)="add()">Əlavə et</button>
+        </div>
+    </div>
+</div>
+</div>
